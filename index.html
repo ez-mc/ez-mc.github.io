@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head><title>EZ MC Generators - Home</title></head>
+    <body>
+        <div id="commandOutputWindow">
+        <textarea id="commandOutput" readonly style="resize: none; width: 200px; height: 50px;">Out</textarea>
+        <button id="popWindow" onclick="popWindow()">Pop Window</button>
+        </div>
+        <br>
+        <br>
+        <button onclick="alert('hi')">say hi</button>
+        <input id="color" list="suggestions" title="This is a message">
+        <datalist id="suggestions">
+    <option value="Black">
+    <option value="Red">
+    <option value="Green">
+    <option value="Blue">
+    <option value="White">
+        </datalist>
+        <a href="https://minecraft.gamepedia.com/Commands/say" target="_blank" rel="noopener noreferrer">
+            <img src="files/images/info_card.png" height="20px" title="Message goes here">
+        </a>
+        <script type="text/javascript">
+        function popWindow(){
+            var windowPopout = window.open('', 'commandOut', 'width=200px,height=50px')
+            windowPopout.document.write('<body></body>')
+            windowPopout.document.body.innerHTML = document.getElementById('commandOutput').innerHTML
+        } 
+        </script>
+    </body>
+</html>
