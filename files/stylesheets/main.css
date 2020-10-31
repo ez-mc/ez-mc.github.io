@@ -1,5 +1,22 @@
+/*Website Name CSS Rules*/
 webname {
+    /*Colors*/
     color: goldenrod;
-    outline: #5d5d5d;
+    outline-color: #ffffff;
+    /*Font*/
+    font-weight: lighter;
+    outline-width: 10px;
+    font-size: 95%;
     font-family: fantasy, Helvetica, sans-serif;
+}
+/*Top Bar CSS Rules*/
+navbar {
+    width: max-content;
+    background-color: #228B22;
+    color: goldenrod;
+    /*font-family: custom-font;*/
+}
+/*Body CSS Rules*/
+body {
+    background-color: #5d5d5d;
 }
